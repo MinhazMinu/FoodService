@@ -159,6 +159,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -278,6 +279,7 @@ header {
   float: left;
   margin-right: 15px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .btn-app:link,
@@ -325,4 +327,36 @@ a:hover,
 a:active {
   color: #555;
   border-bottom: 1px solid transparent;
+}
+
+/*  coustomer review */
+.section-testimonials {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(./img/back-customers.jpg);
+  background-size: cover;
+  color: #ffffff;
+  background-attachment: fixed;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 140%;
+}
+
+cite {
+  font-size: 90%;
+  margin-top: 25px;
+  display: block;
+}
+blockquote::before {
+  content: "";
+  font-size: ;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
 }
