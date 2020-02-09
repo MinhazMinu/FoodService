@@ -16,6 +16,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* 
 == REusiable Component ==
 */
@@ -225,4 +236,93 @@ header {
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.05);
+}
+
+/* app section */
+
+.section-step {
+  background-color: rgb(243, 241, 241);
+}
+
+.step-box:first-child {
+  text-align: right;
+  padding-left: 3%;
+  margin-top: 30px;
+}
+.step-box:last-child {
+  padding-right: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-step div {
+  color: rgb(189, 129, 18);
+  border: 2px solid rgb(189, 129, 18);
+
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  float: left;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+/* city section */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+.city-feature {
+  margin-top: 5px;
+}
+
+.iconsmall {
+  display: inline-block;
+  width: 3px;
+  text-align: center;
+  color: rgb(189, 129, 18);
+  margin-right: 12px;
+}
+
+/* links */
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(189, 129, 18);
+  padding-bottom: 1px;
+  border-bottom: 1px solid rgb(189, 129, 18);
+  transition: border-bottom 0.2s color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
