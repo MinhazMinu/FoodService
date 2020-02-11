@@ -14,13 +14,42 @@ $(document).ready(function() {
   );
 
   // animation scoroll
-  // $("js--scroll-to-plan'").click(function() {
-  //   $("html, body").animmate(
-  //     scrolltop,
-  //     $("js--section-plan").offset().top,
-  //     1000
-  //   );
-  // });
+  $(".js--wp-1").waypoint(
+    function(direction) {
+      $(".js--wp-1").addClass("animated fadeIn");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-2").waypoint(
+    function(direction) {
+      $(".js--wp-2").addClass("animated fadeInLeftBig");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-3").waypoint(
+    function(direction) {
+      $(".js--wp-3").addClass("animated fadeIn");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
+  $(".js--wp-4").waypoint(
+    function(direction) {
+      $(".js--wp-4").addClass("animated pulse");
+    },
+    {
+      offset: "50%"
+    }
+  );
+
   $(".js--scroll-to-plan").click(function() {
     $("html, body").animate(
       { scrollTop: $(".js--section-plan").offset().top },
