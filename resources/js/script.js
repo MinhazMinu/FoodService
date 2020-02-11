@@ -48,4 +48,13 @@ $(document).ready(function() {
       );
     });
   });
+
+  $(".js--nav-icon").click(function() {
+    var nav = $(".js--main-nav");
+    var icon = $(".js--nav-icon i");
+
+    nav.slideToggle(200);
+    icon.toggleClass("ion-md-menu  ion-md-close"); //you can list several class names
+    e.preventDefault();
+  });
 });
