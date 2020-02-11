@@ -218,7 +218,7 @@ header {
   display: inline-block;
 }
 .main-nav li a:link,
-.main-nav li a:link {
+.main-nav li a:visited {
   padding: 10px 3px 10px 3px;
   color: #ffffff;
   text-decoration: none;
@@ -248,9 +248,9 @@ header {
 }
 
 .sticky .main-nav li a:link,
-.sticky .main-nav li a:link {
+.sticky .main-nav li a:visited {
   padding: 16px 0;
-  color: #555555;
+  color: #181717;
 }
 .sticky .logo {
   display: none;

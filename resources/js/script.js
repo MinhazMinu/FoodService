@@ -24,14 +24,28 @@ $(document).ready(function() {
   $(".js--scroll-to-plan").click(function() {
     $("html, body").animate(
       { scrollTop: $(".js--section-plan").offset().top },
-      1000
+      1500
     );
   });
 
   $(".js--scroll-to-start").click(function() {
     $("html, body").animate(
       { scrollTop: $(".js--section-features").offset().top },
-      1500
+      1000
     );
+  });
+
+  /* Navigation scroll */
+
+  $(document).ready(function() {
+    $("a[href*=\\#]").on("click", function(e) {
+      e.preventDefault();
+      $("html, body").animate(
+        {
+          scrollTop: $(this.hash).offset().top
+        },
+        500
+      );
+    });
   });
 });
